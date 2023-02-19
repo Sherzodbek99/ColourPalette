@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+html, body {
+    color: white;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #1F2937;
+    box-sizing: border-box;
+}
+
+
+
+
+nav {
+    padding: 1.5vw;
+    display: flex;
+    height: 7vh;
+    padding-bottom: 0.5vw;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+
+.hidden {
+    display: none;
+}
+
+.copyClipboard {
+    color: aliceblue;
+    border: 4px solid #D5D4D8;
+    padding: 3px 6px;
+}
+
+
+#color{
+    width: 15vw;
+    height: 5vh;
+    border: none;
+
+    
+}
+
+select {
+    width: 20vw;
+    height: 5vh;
+    border-radius: 0.4vw;
+    padding: 0.5vw;
+    background-color: #3D4B60;
+    color: white;
+    border:2px solid #D1D5DB;
+    font-family: 'Inter', sans-serif;
+}
+
+
+
+
+
+button {
+    width: 15vw;
+    height: 5vh;
+    background-color: #3D4B60;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    border: none;
+    border-radius: 0.4vw;
+    cursor:context-menu;
+}
+
+button:hover {
+    border: 2px solid #D1D5DB;
+    
+}
+
+
+
+.colorDiv{
+    margin: 0 4px;
+    width: 20%;
+    height: 80vh;
+    border-radius: 10px;
+    cursor: copy;
+
+}
+
+.colorDiv:hover, .colorDiv:active {
+    border: 4px solid #D1D5DB ;
+    height: 78vh;
+}
+
+#main{
+    display: flex;
+    padding: 0.5vw 1vw;
+    
+}
+
+
+
+#footer {
+    display: flex;
+    justify-content: center;
+    padding: 0.5vw 1vw;
+}
+
+.codeDiv {
+    cursor: pointer;
+    height: 6vh;
+    letter-spacing: 0.1em;
+    width: 20%;
+    display: flex;
+    align-items: center;   
+    font-family: 'Inter';
+    justify-content: center;
+}
+
+.codeDiv:hover {
+    border: 4px solid #D1D5DB ;
+    height: 5vh;
+    border-radius: 10px;
+
+}
+
+.toggle {
+    background-color: #f6f5fa;
+    color: #1F2937;
+    box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.15);
+}
+
+.toggleBtn {
+    background-color: white;
+    color: #3D4B60;
+    border: 2px solid;
+    border-color: #3D4B60;
+}
+
+
+
+@media (max-width: 1000px){
+    #getColorBtn {
+        font-size: 1.5vw;
+    }
+}
+
+@media (max-width: 650px){
+    button, select, #color {
+        width: 25vw;
+        height: 8vh;
+        padding: 0vw;
+        font-size: 2vh;
+    }
+
+    #main {
+        flex-direction: column;
+        width: 60vw;
+        height: 70vh;
+        align-items: center;
+        margin-top: 3vh;
+        gap: 2vw;
+    }
+
+    .colorDiv{
+        width: 60vw;
+    }
+
+    footer {
+        width: 36vw;
+        height: 70vh;
+        flex-direction: column;
+    }
+
+    .codeDiv {
+        width: 36vw;
+        height: 14vh;
+        font-size: 4vw;
+        margin-top: 6vh;
+    }
+
+    .codeDiv:hover {
+        border: 1px solid #D1D5DB ;
+        border-radius: 10px;
+        height: 14vh;
+    }
+   
+
+    #getColorBtn {
+        padding-left: 3px;
+        padding-right: 3px;
+        font-size: 2.6vw;
+    }
+    
+    select {
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+
+    .mediabody {
+        display: flex;
+    }
+}
